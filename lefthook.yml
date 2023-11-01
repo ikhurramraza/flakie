@@ -1,0 +1,17 @@
+skip_output:
+  - meta
+  - summary
+  - success
+  - execution
+
+pre-commit:
+  parallel: true
+  commands:
+    rspec:
+      run: bundle exec rspec
+    rubocop:
+      files: git ls-files **/*.rb
+      run: bundle exec rubocop --fail-fast {files}
+    stree:
+      files: git ls-files **/*.rb
+      run: bundle exec stree check {files}

@@ -1,0 +1,4 @@
+--ignore-files='Gemfile'
+--ignore-files='vendor/bundle/**/*'
+--print-width=120
+--plugins=plugin/trailing_comma
