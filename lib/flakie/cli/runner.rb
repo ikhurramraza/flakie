@@ -15,12 +15,7 @@ module Flakie
         in version: true
           Parser.version.display
         else
-          Engine.new(
-            args.join(" "),
-            count: options.count,
-            env: options.env,
-            reporter: options.formatter.new(options.output),
-          ).run
+          Engine.new(args.join(" "), count: options.count, reporter: options.formatter.new(options.output)).run
         end
       end
 

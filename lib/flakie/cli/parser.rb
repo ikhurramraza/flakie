@@ -18,8 +18,6 @@ module Flakie
 
         opts.on("-o", "--output FILE", "File to output result. Defaults to STDOUT.") { |path| File.open(path, "w") }
 
-        opts.on("-e", "--env KEY_VALUE", "Additional environment variables to set. Can be called multiple times.")
-
         opts.on("-v", "--version", "Show the version")
         opts.on("-h", "--help", "Show this help message")
         opts.separator ""
