@@ -8,8 +8,14 @@ module Flakie
       Runner.new(args).call
     end
 
-    def exit_with_error(msg)
-      warn(msg)
+    def fail(msg, show_help: true)
+      warn("error: #{msg}")
+
+      if show_help
+        warn("")
+        warn(Parser.help)
+      end
+
       exit 1
     end
   end
