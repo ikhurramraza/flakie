@@ -9,4 +9,5 @@ Zeitwerk::Loader.for_gem.tap do |loader|
 end
 
 module Flakie
+  NAME = "flakie"
 end

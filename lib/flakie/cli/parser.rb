@@ -4,10 +4,10 @@ module Flakie
   module CLI
     Parser =
       OptionParser.new do |opts|
-        opts.banner = "USAGE: #{PROGRAM_NAME} [OPTIONS] COMMAND"
+        opts.banner = "USAGE: #{NAME} [OPTIONS] COMMAND"
         opts.separator ""
 
-        opts.version = "#{PROGRAM_NAME} #{VERSION}"
+        opts.version = "#{NAME} #{VERSION}"
 
         opts.separator "OPTIONS:"
         opts.on("-n", "--count COUNT", Integer, "Number of tries (default: #{Options.default.count})")
@@ -27,9 +27,9 @@ module Flakie
         opts.separator ""
 
         opts.separator "EXAMPLES:"
-        opts.separator "  #{PROGRAM_NAME} rails t test/foo_test.rb"
-        opts.separator "  #{PROGRAM_NAME} -n10 rails t test/foo_test.rb"
-        opts.separator "  #{PROGRAM_NAME} -count=10 rails t test/foo_test.rb"
+        opts.separator "  #{NAME} rails t test/foo_test.rb"
+        opts.separator "  #{NAME} -n10 rails t test/foo_test.rb"
+        opts.separator "  #{NAME} -count=10 rails t test/foo_test.rb"
       end
   end
 end

@@ -2,8 +2,6 @@
 
 module Flakie
   module CLI
-    PROGRAM_NAME = "flakie"
-
     def self.run(args)
       Runner.new(args).call
     end
