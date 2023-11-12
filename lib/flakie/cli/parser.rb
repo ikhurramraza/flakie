@@ -27,9 +27,11 @@ module Flakie
         opts.separator ""
 
         opts.separator "EXAMPLES:"
-        opts.separator "  #{NAME} rails t test/foo_test.rb"
-        opts.separator "  #{NAME} -n10 rails t test/foo_test.rb"
-        opts.separator "  #{NAME} -count=10 rails t test/foo_test.rb"
+        opts.separator "  #{NAME}                            rails t test/foo_test.rb"
+        opts.separator "  #{NAME} -n10                       rails t test/foo_test.rb"
+        opts.separator "  #{NAME} --count=10                 rails t test/foo_test.rb"
+        opts.separator "  #{NAME} --format=tictactoe         rails t test/foo_test.rb"
+        opts.separator "  #{NAME} -f tictactoe -o result.txt rails t test/foo_test.rb"
       end
   end
 end
