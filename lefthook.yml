@@ -10,8 +10,10 @@ pre-commit:
     rspec:
       run: bundle exec rspec
     rubocop:
-      files: git ls-files **/*.rb
-      run: bundle exec rubocop --fail-fast {files}
+      files: "git diff --name-only --staged"
+      glob: "{Gemfile,Rakefile,*.gemspec,*.rb}"
+      run: bundle exec rubocop --parallel {files}
     stree:
-      files: git ls-files **/*.rb
+      files: "git diff --name-only --staged"
+      glob: "{Rakefile,*.gemspec,*.rb}"
       run: bundle exec stree check {files}
