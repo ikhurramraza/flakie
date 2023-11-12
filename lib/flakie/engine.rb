@@ -10,10 +10,9 @@ module Flakie
 
     Report = Data.define(:runs) { def last_run = runs.last }
 
-    def initialize(command, count:, env:, reporter:)
+    def initialize(command, count:, reporter:)
       @command = command
       @count = count
-      @env = env
       @reporter = reporter
       @report = Report.new([])
     end
@@ -23,7 +22,7 @@ module Flakie
 
       count.times do |index|
         start_time = Process.clock_gettime(Process::CLOCK_MONOTONIC)
-        system(env, command, out: File::NULL, err: File::NULL)
+        system(command, out: File::NULL, err: File::NULL)
         end_time = Process.clock_gettime(Process::CLOCK_MONOTONIC)
         duration = (end_time - start_time).round
         report.runs.append Run.new(status: $?.success?, duration: duration, number: index + 1)
@@ -35,6 +34,6 @@ module Flakie
 
     private
 
-    attr_reader :command, :count, :env, :reporter, :report
+    attr_reader :command, :count, :reporter, :report
   end
 end
