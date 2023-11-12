@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Flakie
-  module Formatters
+  module Reporters
     ALL = { tictactoe: TicTacToe }.freeze
   end
 end

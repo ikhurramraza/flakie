@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Flakie
-  module Formatters
+  module Reporters
     class TicTacToe < Base
       CHARACTER_SUCCESS = "o"
       CHARACTER_FAILURE = "x"

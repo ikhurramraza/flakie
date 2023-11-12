@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Flakie
-  module Formatters
+  module Reporters
     class Base
       def initialize(output)
         @output = output
@@ -16,7 +16,7 @@ module Flakie
       end
 
       def report(_report)
-        raise NotImplementedError, "Base formatter class must implement this method"
+        raise NotImplementedError, "Base class must implement this method"
       end
 
       private
