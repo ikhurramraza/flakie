@@ -13,7 +13,7 @@ module Flakie
         opts.on("-n", "--count COUNT", Integer, "Number of tries (default: #{Options.default.count})")
 
         opts.on("-f", "--format FORMATTER", "Output format. See FORMATTERS section below.") do |choice|
-          Reporters::ALL.include?(choice.to_sym) ? choice.to_sym : CLI.exit_with_error("Invalid format: #{choice}")
+          Reporters::ALL.include?(choice.to_sym) ? choice.to_sym : CLI.fail("Invalid format: #{choice}")
         end
 
         opts.on("-o", "--output FILE", "File to output result. Defaults to STDOUT.") { |path| File.open(path, "w") }
