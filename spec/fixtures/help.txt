@@ -1,0 +1,18 @@
+USAGE: flakie [OPTIONS] COMMAND
+
+OPTIONS:
+    -n, --count COUNT                Number of tries (default: 5)
+    -f, --format FORMATTER           Output format. See FORMATTERS section below.
+    -o, --output FILE                File to output result. Defaults to STDOUT.
+    -v, --version                    Show the version
+    -h, --help                       Show this help message
+
+FORMATTERS:
+  tictactoe - Outputs "o" for success and "x" for failures (default)
+
+EXAMPLES:
+  flakie                            rails t test/foo_test.rb
+  flakie -n10                       rails t test/foo_test.rb
+  flakie --count=10                 rails t test/foo_test.rb
+  flakie --format=tictactoe         rails t test/foo_test.rb
+  flakie -f tictactoe -o result.txt rails t test/foo_test.rb
