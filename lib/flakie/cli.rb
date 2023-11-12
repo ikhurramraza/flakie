@@ -2,11 +2,13 @@
 
 module Flakie
   module CLI
-    def self.run(args)
+    extend self
+
+    def run(args)
       Runner.new(args).call
     end
 
-    def self.exit_with_error(msg)
+    def exit_with_error(msg)
       warn(msg)
       exit 1
     end
