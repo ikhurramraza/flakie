@@ -13,3 +13,5 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
 end
+
+Dir["spec/support/*.rb"].each { |f| require f.delete_prefix("spec/") }

@@ -25,6 +25,9 @@ Metrics/AbcSize:
 Metrics/MethodLength:
   Enabled: false
 
+RSpec/MultipleExpectations:
+  Enabled: false
+
 Style/Documentation:
   Enabled: false
 
