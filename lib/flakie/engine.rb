@@ -2,14 +2,6 @@
 
 module Flakie
   class Engine
-    Run =
-      Data.define(:status, :duration, :number) do
-        def success? = status == true
-        def failure? = status == true
-      end
-
-    Report = Data.define(:runs) { def last_run = runs.last }
-
     def initialize(command, count:, reporter:)
       @command = command
       @count = count
