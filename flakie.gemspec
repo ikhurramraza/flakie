@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require_relative "lib/flakie"
+require_relative "lib/flakie/version"
 
 Gem::Specification.new do |spec|
-  spec.name = Flakie::NAME
+  spec.name = "flakie"
   spec.version = Flakie::VERSION
   spec.authors = ["Khurram Raza"]
   spec.email = ["ikhurramraza@gmail.com"]
