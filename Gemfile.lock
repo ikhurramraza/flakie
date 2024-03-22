@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    flakie (2.0.0)
+    flakie (2.0.1)
       zeitwerk (~> 2.6.12)
 
 GEM
