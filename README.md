@@ -1,5 +1,9 @@
 # Flakie
 
+![Lint](https://github.com/ikhurramraza/flakie/actions/workflows/lint.yml/badge.svg)
+![Test](https://github.com/ikhurramraza/flakie/actions/workflows/test.yml/badge.svg)
+![Release](https://github.com/ikhurramraza/flakie/actions/workflows/release.yml/badge.svg)
+
 Runs the provided command to calculate its flakyness.
 
 ## 💿 Installation
