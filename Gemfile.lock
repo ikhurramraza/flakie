@@ -80,7 +80,7 @@ GEM
     syntax_tree (6.2.0)
       prettier_print (>= 1.2.0)
     unicode-display_width (2.5.0)
-    zeitwerk (2.6.15)
+    zeitwerk (2.6.16)
 
 PLATFORMS
   x86_64-linux
