@@ -24,13 +24,13 @@ GEM
       ast (~> 2.4.1)
       racc
     prettier_print (1.2.1)
-    psych (5.2.1)
+    psych (5.2.2)
       date
       stringio
     racc (1.8.1)
     rainbow (3.1.1)
     rake (13.1.0)
-    rdoc (6.9.1)
+    rdoc (6.10.0)
       psych (>= 4.0.0)
     regexp_parser (2.9.3)
     reline (0.6.0)
