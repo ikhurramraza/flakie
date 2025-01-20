@@ -24,7 +24,7 @@ GEM
       ast (~> 2.4.1)
       racc
     prettier_print (1.2.1)
-    psych (5.2.2)
+    psych (5.2.3)
       date
       stringio
     racc (1.8.1)
