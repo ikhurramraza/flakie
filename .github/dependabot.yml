@@ -14,8 +14,6 @@ updates:
       - dependency-type: indirect
     labels:
       - dependencies
-    reviewers:
-      - ikhurramraza
 
   - package-ecosystem: github-actions
     directory: "/"
@@ -25,6 +23,3 @@ updates:
       timezone: Europe/Berlin
     labels:
       - dependencies
-      - actions
-    reviewers:
-      - ikhurramraza
