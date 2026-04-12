@@ -47,6 +47,6 @@ jobs:
         run: bundle exec rake release
 
       - name: Create the release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           files: pkg/flakie-*.gem
